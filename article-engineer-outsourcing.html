@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>エンジニアを外注・依頼するときの注意点｜失敗しない見極めポイント</title>
+  <meta name="description" content="エンジニア外注・システム開発を依頼するときの注意点を、経営者向けに解説。話が通じない・失敗する外注を避けるための見極めポイントと判断軸をまとめました。" />
+
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./article-engineer-outsourcing.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="./index.html">
+      <span class="brand__mark">⚡</span>
+      <span class="brand__text">MVP / PoC Studio</span>
+    </a>
+
+    <nav class="nav">
+      <a href="./index.html#service">提供内容</a>
+      <a href="./index.html#strengths">強み</a>
+      <a href="./index.html#pricing">料金</a>
+      <a href="./index.html#process">進め方</a>
+      <a href="./index.html#contact" class="nav__cta">無料相談</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="section--article">
+  <div class="container">
+    <div class="articleLayout">
+
+      <!-- ================= 左カラム：目次 ================= -->
+      <aside class="toc">
+        <a href="#top" class="toc__title">目次</a>
+        <ol class="toc__list">
+          <li><a href="#intro">はじめに</a></li>
+          <li><a href="#background">この記事を書いた背景</a></li>
+          <li><a href="#why-fail">なぜ外注は失敗しやすいのか</a></li>
+          <li>
+            <a href="#points">エンジニア外注で失敗しない見極めポイント7選</a>
+            <ol>
+              <li><a href="#p1">① 目的ではなく機能の話から始まる</a></li>
+              <li><a href="#p2">② 作業が縦割りになり、人が増えていく</a></li>
+              <li><a href="#p3">③ PMがいても誰も全体を見ていない</a></li>
+              <li><a href="#p4">④ 言われたことしかできない</a></li>
+              <li><a href="#p5">⑤ 重要でない機能に固執する</a></li>
+              <li><a href="#p6">⑥ 次の意思決定が設計されていない</a></li>
+              <li><a href="#p7">⑦ 受託マインドが前提になっている</a></li>
+            </ol>
+          </li>
+          <li><a href="#my-policy">私が受託マインドではない理由</a></li>
+          <li><a href="#summary">まとめ</a></li>
+        </ol>
+      </aside>
+
+      <!-- ================= 記事本文 ================= -->
+      <article class="article">
+
+        <h1 id="top">
+          エンジニア外注で失敗しないための見極めポイント7選 ― 経営者が「最初に見るべき判断軸」
+        </h1>
+
+        <!-- INTRO -->
+        <div class="articleLead" id="intro">
+          エンジニアを外注しようとしたとき、<br>
+          <strong>「この人に任せて本当に大丈夫か？」</strong><br>
+          そんな違和感を覚えたことはありませんか。
+        </div>
+
+        <p>
+          見積はそれっぽい。<br>
+          技術の説明も一応は通っている。<br>
+          それでも決断できない――。
+        </p>
+
+        <p>
+          その感覚は、かなりの確率で正しいです。<br>
+          外注開発の失敗は、<strong>契約前の会話ですでに兆候が出ています。</strong>
+        </p>
+
+        <h2 id="background">この記事を書いた背景</h2>
+
+        <p>
+          私はこれまで、品質が最優先の大規模SaaS開発と、スピード重視の新規事業・MVP開発の両方を経験してきました。
+          その中で何度も見たのが、「正しく作る」ことに最適化されすぎて、<strong>“使われる・伸びる”ための意思決定</strong>が後回しになる状況です。
+        </p>
+
+        <p>
+          現場には、再現性のある“詰まりどころ”がいくつもあります。
+          仕様が目的からズレる、検証が遅れる、作り切った後に学びが残らない、チームが疲弊する――。
+        </p>
+
+        <p>
+          この記事は、そうした問題を「気合い」ではなく、<strong>仕組みと判断基準で減らすため</strong>に書きました。
+        </p>
+
+
+        <h2 id="why-fail">なぜエンジニア外注は失敗しやすいのか</h2>
+
+        <p>
+          外注開発の失敗は、技術力不足が原因だと思われがちですが、
+          実際はほとんどの場合、<strong>構造的な問題</strong>です。
+        </p>
+
+        <p>
+          典型的なのは、
+          「要件通りに作った」「工数通りに進めた」「納期も守った」
+          ——それでも事業は前に進まない、というケース。
+        </p>
+
+        <p>
+          これは誰かがサボったわけでも、無能だったわけでもありません。
+          <strong>そもそも外注という形が、事業判断とズレやすい</strong>のです。
+        </p>
+
+        <p class="articleNote">
+          ・外注側：契約範囲を漏れなく作ることがゴール<br>
+          ・経営者：次の意思決定に進めるかがゴール
+        </p>
+
+        <p>
+          ゴールが違えば、正解も違います。
+          このズレを放置したまま進むと、
+          「ちゃんとしたシステムだが、誰も使わない」
+          という最悪の成果物が出来上がります。
+        </p>
+
+
+        <!-- POINTS -->
+        <h2 id="points">エンジニア外注で失敗しない見極めポイント7選</h2>
+
+        <h3 id="p1">① 目的ではなく「機能」の話から始まる</h3>
+        <p>
+          いきなり仕様・機能の話をするエンジニアは要注意です。
+          目的が間違っていても、機能は作れてしまいます。
+        </p>
+
+        <h3 id="p2">② 作業が縦割りになり、人が増えていく</h3>
+        <p>
+          フロント・バック・インフラと人が分かれ、
+          気づけば人数が増えていく。
+        </p>
+        <p>
+          人が増えるほど、<strong>コミュニケーションコストは指数関数的に増えます。</strong>
+        </p>
+
+        <h3 id="p3">③ PMがいても、誰も全体を見ていない</h3>
+        <p>
+          ハブとしてPMがいても、技術的な理解がなければ判断できません。
+          結果、意思決定がすべて経営側に戻ってきます。
+        </p>
+
+        <h3 id="p4">④ 言われたことしかできないエンジニア</h3>
+        <p>
+          作っている人にしか見えない改善案があります。
+          それが一切出てこない場合、その人は「作業者」です。
+        </p>
+
+        <p class="articleQuote">
+          「こうした方が、目的に近いと思います」
+        </p>
+
+        <p>
+          この一言が出るかどうかは、非常に重要な判断軸です。
+        </p>
+
+        <h3 id="p5">⑤ 本当はどちらでもいい機能に固執する</h3>
+        <p>
+          UIの細部や、影響の小さい機能に時間を使いすぎる。
+          これは検証フェーズでは典型的な失敗です。
+        </p>
+
+        <h3 id="p6">⑥ 開発後の「次の意思決定」が設計されていない</h3>
+        <p>
+          開発のゴールは完成ではありません。
+          <strong>この結果を見て、次にどう判断するか</strong>が決まっているかが重要です。
+        </p>
+
+        <h3 id="p7">⑦ 受託マインドが前提になっている</h3>
+        <p>
+          工数を増やすことが正解になりがちなのが、受託構造です。
+          人を増やし、期間を延ばすほど売上が立つ。
+        </p>
+
+        <p>
+          その結果、<strong>事業の成功と利害が一致しなくなります。</strong>
+        </p>
+
+        <!-- SUMMARY -->
+        <h2 id="summary">まとめ</h2>
+
+        <p>
+          エンジニア外注で最も重要なのは、技術力ではありません。
+        </p>
+
+        <p>
+          このチェックリストが、
+          後悔しない意思決定の助けになれば幸いです。
+        </p>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="ctaBox">
+          <div class="ctaBox__copy">
+            <h2>無料相談（60分）</h2>
+            <p>
+              相談だけでもOKです。要件が固まっていなくても大丈夫。<br />
+              「何を検証すべきか」「どこまで作るべきか」から一緒に整理します。
+            </p>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="formRow">
+              <label class="formLabel" for="name">お名前</label>
+              <input class="formInput" id="name" type="text" required />
+            </div>
+
+            <div class="formRow">
+              <label class="formLabel" for="email">メール</label>
+              <input class="formInput" id="email" type="email" required />
+            </div>
+
+            <div class="formRow">
+              <label class="formLabel" for="message">相談内容</label>
+              <textarea class="formTextarea" id="message" rows="5" required></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">
+              送信する
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <div class="brand brand--footer">
+        <span class="brand__mark">⚡</span>
+        <span class="brand__text">MVP / PoC Studio</span>
+      </div>
+      <div class="footer__small">© <span id="year"></span> MVP / PoC Studio</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+<script>
+  (function () {
+      const IS_PROD = location.hostname === "fast-tech-studio.com";
+      if (!IS_PROD) return;
+
+      // 明示的にトラッキング無効
+      // if (localStorage.getItem("disable_tracking") === "1") return;
+
+      // ============================
+      // セッションID（タブ単位）
+      // ============================
+      const SESSION_KEY = "lp_session_id";
+      let sessionId = sessionStorage.getItem(SESSION_KEY);
+
+      if (!sessionId) {
+        sessionId = Math.random().toString(36).slice(2, 10);
+        sessionStorage.setItem(SESSION_KEY, sessionId);
+      }
+
+      // ============================
+      // PV送信（可視 & 1回のみ）
+      // ============================
+      fetch("https://kp-tracker-fast-tech-studio.miyabiw26.workers.dev/view", {
+        method: "POST",
+        keepalive: true,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          userAgent: navigator.userAgent,
+          referrer: document.referrer,
+          page: 'article-engineer-outsourcing',
+        })
+      });
+
+      // ============================
+      // CTAクリック送信
+      // ============================
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   const ctas = document.querySelectorAll(
+      //     "#cta-header, #cta-hero, #cta-footer"
+      //   );
+
+      //   ctas.forEach((btn) => {
+      //     btn.addEventListener("click", () => {
+      //       fetch("https://kp-tracker-fast-tech-studio.miyabiw26.workers.dev/cta", {
+      //         method: "POST",
+      //         keepalive: true,
+      //         headers: { "Content-Type": "application/json" },
+      //         body: JSON.stringify({
+      //           sessionId,
+      //           ctaId: btn.id,
+      //           userAgent: navigator.userAgent,
+      //           referrer: document.referrer
+      //         })
+      //       });
+      //     });
+      //   });
+      // });
+
+    })();
+</script>
+</body>
+</html>

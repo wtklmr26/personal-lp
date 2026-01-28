@@ -1,0 +1,78 @@
+/* ===== 2カラム（調整版） ===== */
+.articleLayout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr); /* ← 目次を細く */
+  gap: 56px; /* ← 余白を少し広げる */
+  align-items: start;
+}
+
+/* ===== TOC（少し引き締め） ===== */
+.toc {
+  position: sticky;
+  top: 96px;
+  font-size: 13px; /* ← 文字も少し小さく */
+}
+
+.toc__title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.toc__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc__list li {
+  margin-bottom: 6px; /* ← 縦密度UP */
+}
+
+.toc__list a {
+  color: #475569;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* 子目次 */
+.toc__list ol {
+  padding-left: 14px;
+  margin-top: 4px;
+}
+
+/* ===== メイン記事（太く・読みやすく） ===== */
+.article {
+  background: #ffffff;
+  padding: 20px 72px; /* ← 横方向を太く */
+  box-shadow: 0 24px 48px rgba(15,23,42,0.08);
+  max-width: 980px; /* ← 行長の上限を広げる */
+}
+.section--article {
+  margin: 24px 0;
+}
+
+/* 見出しとアンカーずれ防止 */
+.article h2,
+.article h3,
+.articleLead {
+  scroll-margin-top: 120px;
+}
+
+/* ===== モバイル ===== */
+@media (max-width: 960px) {
+  .articleLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .article {
+    padding: 32px 24px;
+    max-width: none;
+  }
+}

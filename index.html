@@ -109,7 +109,12 @@
 
       <div class="hero__links">
         <span class="hero__linksLabel">おすすめ記事：</span>
-        <a href="./article-mvp.html">MVP開発とは？最短で事業検証する方法</a>
+        <div>
+          <a href="./article-mvp.html">MVP開発とは？最短で事業検証する方法</a>
+        </div>
+        <div>
+          <a href="./article-engineer-outsourcing.html">エンジニア外注の注意点</a>
+        </div>
       </div>
     </div>
     <div class="hero__bg"></div>
@@ -477,11 +482,6 @@
           <div class="about__profile">
             <div class="about__name">
               <div class="tags">
-                <!-- Background -->
-                <span class="tag">長野県出身</span>
-                <span class="tag">MVP / PoC</span>
-                <span class="tag">事業目線</span>
-
                 <!-- Backend -->
                 <span class="tag">Ruby</span>
                 <span class="tag">Ruby on Rails</span>
@@ -680,7 +680,8 @@
         body: JSON.stringify({
           sessionId,
           userAgent: navigator.userAgent,
-          referrer: document.referrer
+          referrer: document.referrer,
+          page: '/',
         })
       });
 
